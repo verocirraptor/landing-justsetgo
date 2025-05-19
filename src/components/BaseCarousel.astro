@@ -1,0 +1,103 @@
+---
+import ButtonArrowNext from "@/components/ButtonArrowNext.astro";
+import ButtonArrowPrev from "@/components/ButtonArrowPrev.astro";
+import ImagesCarousel from "@/data/images-carousel.json";
+import ImageCarousel from "@/components/ImageCarousel.astro";
+
+let position = 0;
+---
+
+<div class="carousel">
+    <ButtonArrowPrev />
+    <div class="images">
+        {
+            ImagesCarousel.map((item) => (
+                <ImageCarousel
+                    source={item.source}
+                    alternate={item.alternate}
+                    frase={item.frase}
+                    position={position++}
+                />
+            ))
+        }       
+    </div>
+    <ButtonArrowNext />
+</div>
+
+<style>
+    .carousel {
+        margin: 15rem auto;
+        width: 60vw;
+        height: calc(60vw / 2);
+        margin-bottom: 20rem;
+        position: relative;
+
+
+        .images {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            width: 100%;
+            height: calc(60vw / 2);
+        }
+
+        .image-carousel {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute; /* o fixed si lo necesitas encima de todo */
+            transition: opacity 1s ease-in-out;
+        }
+
+        .showed {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        & .btn-arrow-next,
+        & .btn-arrow-prev {
+            position: absolute;
+            top: 60%;
+            transform: translateY(-50%);
+            z-index: 3;
+        }
+
+        & .btn-arrow-prev {
+            left: 1rem;
+        }
+        & .btn-arrow-next {
+            right: 1rem;
+        }
+    }
+</style>
+
+<script>
+    const btnPrev = document.querySelector(".btn-arrow-prev");
+    const btnNext = document.querySelector(".btn-arrow-next");
+    const quantity = document.querySelectorAll(".image-carousel").length;
+
+    document.querySelector(".image-carousel.img0")?.classList.add('showed');
+    let position = 0;
+
+    btnPrev?.addEventListener("click", () => {
+        if (position > 0) {
+            document
+                .querySelector(`.image-carousel.img${position}`)
+                ?.classList.remove("showed");
+
+            document
+                .querySelector(`.image-carousel.img${--position}`)
+                ?.classList.add("showed");
+        }
+    });
+
+    btnNext?.addEventListener("click", () => {
+        if (position < quantity - 1) {
+            document
+                .querySelector(`.image-carousel.img${position}`)
+                ?.classList.remove("showed");
+            document
+                .querySelector(`.image-carousel.img${++position}`)
+                ?.classList.add("showed");
+        }
+    });
+</script>

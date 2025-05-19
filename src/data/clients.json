@@ -1,0 +1,37 @@
+[
+    {
+        "background": "/images/clients/client01.avif",
+        "opinion": "Estoy muy contento con el viaje que he hecho.",
+        "secondClass": "item-1"
+    },
+    {
+        "background": "/images/clients/client02.avif",
+        "opinion": "Estoy muy contento con el viaje que he hecho.",
+        "secondClass": "item-2"
+    },
+    {
+        "background": "/images/clients/client03.avif",
+        "opinion": "Estoy muy contento con el viaje que he hecho.",
+        "secondClass": "item-3"
+    },
+    {
+        "background": "/images/clients/client04.avif",
+        "opinion": "Estoy muy contento con el viaje que he hecho.",
+        "secondClass": "item-4"
+    },
+    {
+        "background": "/images/clients/client05.avif",
+        "opinion": "Estoy muy contento con el viaje que he hecho.",
+        "secondClass": "item-5"
+    },
+    {
+        "background": "/images/clients/client06.avif",
+        "opinion": "Estoy muy contento con el viaje que he hecho.",
+        "secondClass": "item-6"
+    },
+    {
+        "background": "/images/clients/client07.avif",
+        "opinion": "Estoy muy contento con el viaje que he hecho.",
+        "secondClass": "item-7"
+    }
+]

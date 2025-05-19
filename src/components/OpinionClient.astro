@@ -1,0 +1,8 @@
+---
+const { background, opinion, secondClass } = Astro.props;
+---
+
+<div class={`item ${secondClass}`}>
+    <div style={{ backgroundImage: `url(${background})` }}></div>
+    <div class="opinion">{opinion}</div>
+</div>

@@ -1,0 +1,26 @@
+[
+    {
+        "frase" : "Asistencia personalizada",
+        "source" : "images/carousel/carousel001.avif",
+        "alternate": "Foto viaje"
+    },
+
+    {
+        "frase" : "Ofertas exclusivas",
+        "source" : "images/carousel/carousel002.avif",
+        "alternate": "Foto viaje"
+    },
+
+    {
+        "frase" : "Experiencias auténticas",
+        "source" : "images/carousel/carousel003.avif",
+        "alternate": "Foto viaje"
+    },
+
+    {
+        "frase" : "Viajes a tu medida",
+        "source" : "images/carousel/carousel004.avif",
+        "alternate": "Foto viaje"
+    }
+
+]

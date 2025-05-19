@@ -1,16 +1,20 @@
 ---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import BaseHeader from "@/components/BaseHeader.astro";
+import BaseHero from "@/components/BaseHero.astro"
+import BaseBento from "@/components/BaseBento.astro";
+import BaseCarousel	from "@/components/BaseCarousel.astro";
+import BaseClients from "@/components/BaseClients.astro";
 
+const title = "JustSetGo";
 ---
+<!--funcionalidad boton tema claro/oscuro -->
+<script type="module" src="/scriptsJs/theme.js"></script>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title={title}>
+	<BaseHeader/>
+	<BaseHero/>
+	<BaseBento/>
+	<BaseCarousel/>
+	<BaseClients/>
+</BaseLayout>

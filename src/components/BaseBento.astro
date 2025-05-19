@@ -1,0 +1,124 @@
+---
+
+---
+
+<style>
+    .container {
+        max-width: 60%;
+        margin: 10rem auto;
+        display: grid;
+
+
+        grid-template-columns: 1fr 2fr;
+        justify-content: end;
+       
+        & .container-text{
+
+           padding-right: 5rem;
+            & h2 {
+            margin: -1rem;
+            font-family: "Quicksand";
+            font-size: 3rem;
+            text-align: right;
+
+        }
+        & p {
+            font-family: "Quicksand";
+            text-align: right;
+        }
+        }
+    }
+
+    .bento {
+        --size: 750px;
+        display: grid;
+        width: var(--size);
+
+        height: var(--size); 
+
+        margin: 0 auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 1rem;
+
+        & .item {
+            background-size: cover;
+                        background-position: 50%;
+
+            color: white;
+            font-size: 20px;
+            align-items: end;
+            display: flex;
+            flex-direction: row-reverse;
+            border-radius: 10px;
+
+
+            & p {
+                background-color: #0000007e;
+                margin: 10px;
+                padding: 10px;
+                border-radius: 5px;
+            }
+        }
+
+        .item-1 {
+            background-image: url(/images/bento/japon.webp);
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+        }
+        .item-2 {
+            background-image: url(/images/bento/eeuu.webp);
+        }
+        .item-3 {
+            background-image: url(/images/bento/maldivas.webp);
+        }
+        .item-4 {
+            background-image: url(/images/bento/nueva-york.webp);
+            grid-column: 4;
+            grid-row: 1 / span 2;
+        }
+        .item-5 {
+            background-image: url(/images/bento/mexico.webp);
+        }
+        .item-6 {
+            background-image: url(/images/bento/safaris.webp);
+        }
+        .item-7 {
+            background-image: url(/images/bento/egipto.webp);
+            grid-column: 1 / span 2;
+            grid-row: 4;
+        }
+        .item-8 {
+            background-image: url(/images/bento/tailandia.webp);
+            grid-column: 3;
+            grid-row: 3 / span 2;
+        }
+        .item-9 {
+            background-image: url(/images/bento/roma.avif);
+        }
+        .item-10 {
+            background-image: url(/images/bento/argentina.webp);
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="container-text">
+        <h2>Patata gorda disfruta mucho con tus viajes</h2>
+        <p>¿Cuál será el tuyo?</p>
+        
+    </div>
+    <div class="bento">
+        <div class="item item-1"><p>Japón</p></div>
+        <div class="item item-2"><p>EE.UU.</p></div>
+        <div class="item item-3"><p>Maldivas</p></div>
+        <div class="item item-4"><p>Nueva York</p></div>
+        <div class="item item-5"><p>México</p></div>
+        <div class="item item-6"><p>Safaris</p></div>
+        <div class="item item-7"><p>Egipto</p></div>
+        <div class="item item-8"><p>Tailandia</p></div>
+        <div class="item item-9"><p>Roma</p></div>
+        <div class="item item-10"><p>Argentina</p></div>
+    </div>
+</div>
+
