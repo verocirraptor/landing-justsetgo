@@ -34,7 +34,7 @@ import OpinionClient from "@/components/OpinionClient.astro";
         display: flex;
         flex-direction: column;
         row-gap: 5rem;
-        padding-bottom: 10rem;
+        /* padding-bottom: 10rem; */
         & h1 {
             font-size: 3rem;
             font-family: quicksand;
@@ -65,8 +65,7 @@ import OpinionClient from "@/components/OpinionClient.astro";
                 background-position: center;
                 background-repeat: no-repeat;
                 border-radius: 50%;
-                
-                
+
                 border: 3px solid #ff8038;
                 box-shadow: 0 0 50px 1px #ff803880;
                 transition: transform 0.3s ease-in-out;
@@ -114,6 +113,21 @@ import OpinionClient from "@/components/OpinionClient.astro";
             & .item-7 {
                 grid-column: 6;
                 grid-row: 1/ 2 span;
+            }
+        }
+
+        & p {
+            border: 1px solid #ff8038;
+            padding: 1.5rem;
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border: 1px solid #ff8038;
+                top: 5px;
+                left: 5px;
             }
         }
     }
