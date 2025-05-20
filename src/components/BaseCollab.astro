@@ -1,0 +1,66 @@
+---
+
+---
+
+<style>
+    .collab-container {
+        max-width: 60%;
+        margin: 10rem auto;
+        display: grid;
+
+
+        grid-template-rows: 1fr 1fr;
+        justify-content: end;
+        font-family: "Quicksand";
+    }
+
+    .collab {
+        --size: 750px;
+        display: grid;
+        width: var(--size);
+        height: var(--size); 
+
+        margin: 0 auto;
+        grid-template-columns: (1, 1fr);
+        grid-template-rows: (1, 1fr);
+        grid-gap: 1rem;
+        
+        .item-1 {
+            background-image: url(/images/collabs/iberia.png);
+            background-repeat: no-repeat;
+        }
+        .item-2 {
+            background-image: url(/images/collabs/air_europa.png);
+            background-repeat: no-repeat;
+        }
+        .item-3 {
+            background-image: url(/images/collabs/vueling.png);
+            background-repeat: no-repeat;
+        }
+        .item-4 {
+            background-image: url(/images/collabs/airnostrum.png);
+            background-repeat: no-repeat;
+        }
+        .item-5 {
+            background-image: url(/images/collabs/volotea.png);
+            background-repeat: no-repeat;
+        }
+        .item-6 {
+            background-image: url(/images/collabs/wamos.png);
+            background-repeat: no-repeat;
+        }
+    }
+</style>
+
+
+<div class="collab-container">
+    <h2>Nuestros colaboradores</h2>
+    <div class="collab">
+        <div class="item item-1"></div>
+        <div class="item item-2"></div>
+        <div class="item item-3"></div>
+        <div class="item item-4"></div>
+        <div class="item item-5"></div>
+        <div class="item item-6"></div>
+    </div>
+</div>

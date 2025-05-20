@@ -1,0 +1,74 @@
+---
+
+---
+<style>
+    .container {
+        max-width: 60%;
+        display: grid;
+        margin: 10rem auto;
+        grid-template-columns: 1fr 1fr;
+        justify-content: end;
+       
+        & .container-img{
+            background-image: url(/images/others/travel.jpg);
+            background-size: cover;
+            max-height: 350px;
+            background-repeat: no-repeat;
+            padding-right: 5rem;
+            border-radius: 10px;
+        }
+    }
+
+    .guide {
+        --size: 650px;
+        display: grid;
+        width: var(--size);
+        height: var(--size); 
+
+        margin: 0 auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 1rem;
+
+        & strong {
+            font-family: "Quicksand";
+            font-size: larger;
+        }
+
+        & p {
+            font-family: "Quicksand";
+        }
+
+        }
+
+        .item-1 {
+            grid-row: 1;
+        }
+        .item-2 {
+            grid-row: 2;
+        }
+        .item-3 {
+            grid-row: 3;
+        }
+        .item-4 {
+            grid-row: 4;
+        }
+</style>
+
+
+<div class="container">
+    <div class="guide">
+        <ul>
+        <div class="item item-1"><strong><img src="/images/guide/destination.png"> Elige un destino</strong>
+        <p>Selecciona un destino entre nuestra gran oferta de lugares.</p></div>
+        <div class="item item-1"><strong><img src="/images/guide/planner.png"> Elige una fecha</strong>
+        <p>Selecciona tus días de vacaciones y márcalos en tu calendario.</p></div>
+        <div class="item item-3"><strong><img src="/images/guide/payment.png"> Realiza el pago</strong>
+        <p>Paga el importe de tu viaje. Puedes pagar con tarjeta de crédito o via PayPal.</p></div>
+        <div class="item item-4"><strong><img src="/images/guide/lifestyle.png"> Ve al aeropuerto el día indicado</strong>
+        <p>¡No te olvides las maletas y disfruta de tu viaje de principio a fin!</p></div>
+        </ul>
+    </div>
+    <div class="container-img">
+    </div>
+</div>
