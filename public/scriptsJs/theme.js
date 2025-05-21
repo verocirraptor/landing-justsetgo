@@ -4,16 +4,44 @@ function setThemeClass(theme) {
   document.documentElement.classList.add(theme);
   localStorage.setItem('theme', theme);
 
-  const img = document.querySelector('.logo-combo');
-  if (img) {
-    img.src = theme === 'dark' 
+  const imgLogo = document.querySelector('.logo-combo');
+  if (imgLogo) {
+    imgLogo.src = theme === 'dark' 
       ? '/images/dark-logo-combo.png' 
       : '/images/light-logo-combo.png';
+  }
+
+  const imgFooter = document.querySelector('.logo-footer');
+  if (imgFooter) {
+    imgFooter.src = theme === 'dark' 
+      ? '/images/logos/logo-dark.png' 
+      : '/images/logos/logo.png';
+  }
+
+  const imgGitH = document.querySelector('.logo-github');
+  if (imgGitH) {
+    imgGitH.src = theme === 'dark' 
+      ? '/images/rrss/GitHub_dark.svg' 
+      : '/images/rrss/GitHub_light.svg';
+  }
+
+  const imgInsta = document.querySelector('.logo-insta');
+  if (imgInsta) {
+    imgInsta.src = theme === 'dark' 
+      ? '/images/rrss/Instagram_dark.svg' 
+      : '/images/rrss/Instagram_light.svg';
   }
 
   const blockHero = document.querySelector('.block-hero');
   blockHero.classList.remove('light', 'dark');
   blockHero.classList.add(theme);
+
+  /* const cta = document.querySelectorAll('.cta');
+  elementos.forEach(ctaI => {
+  ctaI.classList.remove('light', 'dark');
+  cta.classList.add(theme);
+  ctaI.classList.toggle('modo-oscuro');
+}); */
 
 }
 
