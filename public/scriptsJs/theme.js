@@ -35,12 +35,13 @@ function setThemeClass(theme) {
   const blockHero = document.querySelector('.block-hero');
   blockHero.classList.remove('light', 'dark');
   blockHero.classList.add(theme);
+  document.body.classList.remove('light', 'dark');
+  document.body.classList.add(theme);
 
   /* const cta = document.querySelectorAll('.cta');
-  elementos.forEach(ctaI => {
+  ctaI.forEach(ctaI => {
   ctaI.classList.remove('light', 'dark');
   cta.classList.add(theme);
-  ctaI.classList.toggle('modo-oscuro');
 }); */
 
 }
