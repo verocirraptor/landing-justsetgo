@@ -39,17 +39,32 @@ h3,p,.cta-button {
 }
 
 .cta-button {
-    background-color: #ff8038;
-    color: #fff;
-    border-radius: 5px;
-    transition-duration: 0.4s;
-    padding: 5px;
-    cursor: pointer;
-    text-decoration: none;
+  background: linear-gradient(to bottom right, #EF4765, #ff8038);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: large;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
 }
 
-.cta-button:hover {
-    background-color: #38b6ff;
+.cta-button:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.cta-button:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
 </style>
 
