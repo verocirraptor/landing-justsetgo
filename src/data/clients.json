@@ -1,37 +1,37 @@
 [
     {
-        "background": "/images/clients/client01.avif",
-        "opinion": "Estoy muy contento con el viaje que he hecho.",
+        "background": "/images/clients/cliente1.webp",
+        "opinion": "Reservé Lisboa en minutos. Todo fácil y claro. ¡Volveré seguro!",
         "secondClass": "item-1"
     },
     {
-        "background": "/images/clients/client02.avif",
-        "opinion": "Estoy muy contento con el viaje que he hecho.",
+        "background": "/images/clients/cliente2.webp",
+        "opinion": "Berlín organizado sin drama. Buenísima herramienta de viajes.",
         "secondClass": "item-2"
     },
     {
-        "background": "/images/clients/client03.avif",
-        "opinion": "Estoy muy contento con el viaje que he hecho.",
+        "background": "/images/clients/cliente3.webp",
+        "opinion": "Tokio, Seúl y Bangkok en un solo clic. Cero estrés, todo fluyó.",
         "secondClass": "item-3"
     },
     {
-        "background": "/images/clients/client04.avif",
-        "opinion": "Estoy muy contento con el viaje que he hecho.",
+        "background": "/images/clients/cliente4.webp",
+        "opinion": "Viaje familiar a CDMX fácil de planear. Muy útil en grupo.",
         "secondClass": "item-4"
     },
     {
-        "background": "/images/clients/client05.avif",
-        "opinion": "Estoy muy contento con el viaje que he hecho.",
+        "background": "/images/clients/cliente5.webp",
+        "opinion": "Atenas fue un sueño. La web me lo puso todo en bandeja.",
         "secondClass": "item-5"
     },
     {
-        "background": "/images/clients/client06.avif",
-        "opinion": "Estoy muy contento con el viaje que he hecho.",
+        "background": "/images/clients/cliente6.webp",
+        "opinion": "Oferta para Río, todo rápido y claro. ¡Experiencia top!",
         "secondClass": "item-6"
     },
     {
-        "background": "/images/clients/client07.avif",
-        "opinion": "Estoy muy contento con el viaje que he hecho.",
+        "background": "/images/clients/cliente7.webp",
+        "opinion": "El Cairo organizado al detalle. Solo faltaron más fotos.",
         "secondClass": "item-7"
     }
 ]
