@@ -1,62 +1,79 @@
 ---
 
 ---
+
 <style>
-    .container {
-        max-width: 60vw;
-        display: flex;
-        margin: 10rem auto;
-        
-        justify-content: center;
-        align-items: start;
-       
-        & .container-img{
-            --size: 350px;
-            background-image: url(/images/others/travel.webp);
-            background-size: cover;
-            width: var(--size);
-            height: var(--size);
-            background-repeat: no-repeat;
-            padding-right: 5rem;
-            border-radius: 10px;
-        }
+  .container {
+    max-width: 60vw;
+    display: flex;
+    margin: 10rem auto;
+
+    justify-content: center;
+    align-items: start;
+
+    & .container-img {
+      --size: 350px;
+      background-image: url(/images/others/travel.webp);
+      background-size: cover;
+      width: var(--size);
+      height: var(--size);
+      background-repeat: no-repeat;
+      padding-right: 5rem;
+      border-radius: 10px;
+    }
+  }
+
+  .guide {
+    --size: 650px;
+    width: var(--size);
+
+    & ul {
+      padding: 0px;
     }
 
-    .guide {
-        --size: 650px;
-        width: var(--size);
+    & strong {
+      font-family: var(--font-title);
+      font-size: larger;
+    }
 
-        & ul {
-            padding: 0px;
-        }
-        
-
-        & strong {
-            font-family: var(--font-title);
-            font-size: larger;
-        }
-
-        & p {
-            font-family: var(--font-title);
-        }
-
-        }
-
+    & p {
+      font-family: var(--font-body);
+      font-size: large;
+      margin: 4px;
+      font-weight: 300;
+    }
+  }
 </style>
 
-
 <div class="container">
-    <div class="guide">
-        <ul>
-        <div class="item item-1"><img src="/images/guide/destination.png"> <strong>Elige un destino</strong>
-        <p>Selecciona un destino entre nuestra gran oferta de lugares.</p></div>
-        <div class="item item-1"><img src="/images/guide/planner.png"> <strong>Elige una fecha</strong>
-        <p>Selecciona tus días de vacaciones y márcalos en tu calendario.</p></div>
-        <div class="item item-3"><img src="/images/guide/payment.png"> <strong>Realiza el pago</strong>
-        <p>Paga el importe de tu viaje. Puedes pagar con tarjeta de crédito o via PayPal.</p></div>
-        <div class="item item-4"><img src="/images/guide/lifestyle.png"> <strong>Ve al aeropuerto el día indicado</strong>
-        <p>¡No te olvides las maletas y disfruta de tu viaje de principio a fin!</p></div>
-        </ul>
-    </div>
-    <div class="container-img"></div>
+  <div class="guide">
+    <ul>
+      <div class="item item-1">
+        <img src="/images/guide/destination.png" />
+        <strong>Elige un destino</strong>
+        <p>Selecciona un destino entre nuestra gran oferta de lugares.</p>
+      </div>
+      <div class="item item-1">
+        <img src="/images/guide/planner.png" />
+        <strong>Elige una fecha</strong>
+        <p>Selecciona tus días de vacaciones y márcalos en tu calendario.</p>
+      </div>
+      <div class="item item-3">
+        <img src="/images/guide/payment.png" />
+        <strong>Realiza el pago</strong>
+        <p>
+          Paga el importe de tu viaje. Puedes pagar con tarjeta de crédito o via
+          PayPal.
+        </p>
+      </div>
+      <div class="item item-4">
+        <img src="/images/guide/lifestyle.png" />
+        <strong>Ve al aeropuerto el día indicado</strong>
+        <p>
+          ¡No te olvides las maletas y disfruta de tu viaje de principio a fin!
+        </p>
+      </div>
+    </ul>
+  </div>
+  <div class="container-img"></div>
 </div>

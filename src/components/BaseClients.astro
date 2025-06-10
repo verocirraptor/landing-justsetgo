@@ -5,11 +5,9 @@ import OpinionClient from "@/components/OpinionClient.astro";
 
 <article class="container-opinions">
     <p>
-        Cuidar de ti y de tu viaje es nuestra principal fuente de motivación.
+        Cuidar de ti y de tu viaje es nuestra principal fuente de motivación.<br/>
         Dinos qué tienes en mente y nuestros asesores expertos le darán forma a
         tu medida.
-        <br /><br />
-        Por eso ...
     </p>
 
     <h1>Opinan nuestros clientes 😄</h1>
@@ -44,8 +42,10 @@ import OpinionClient from "@/components/OpinionClient.astro";
         }
 
         & {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             font-family: var(--font-body);
+            font-weight: 300;
+            text-align: center;
         }
 
         .clients {
@@ -83,7 +83,7 @@ import OpinionClient from "@/components/OpinionClient.astro";
                 &:before {
                     content: "";
                     position: absolute;
-                    top: -20px;
+                    top: -25px;
                     left: 10px;
                     width: 30px;
                     height: 30px;
