@@ -1,6 +1,8 @@
 :root {
   --bg-color: white;
   --text-color: rgb(7, 7, 7);
+  --font-title: Quicksand, Roboto, sans-serif;
+  --font-body: Outfit, Jost, sans-serif;
 }
 
 .dark {
